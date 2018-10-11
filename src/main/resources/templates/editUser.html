@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="/EasyUI/themes/icon.css"/>
+<link rel="stylesheet" href="/EasyUI/themes/default/easyui.css"/>
+<link rel="stylesheet" href="/EasyUI/themes/color.css"/>
+<script type="text/javascript" src="/EasyUI/jquery.min.js"></script>
+<script src="/EasyUI/jquery.easyui.min.js"></script>
+<script src="/EasyUI/locale/easyui-lang-zh_CN.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+	<form id="editUserForm">
+         <table align="center">
+             <tr>
+                 <td>用户姓名:</td>
+                 <td>
+                 	<input type='text' name='name' th:field="${editUser.name}" />
+                 	<input type='hidden' name='id' th:field="${editUser.id}" />
+                 </td>
+             </tr>
+             <tr>
+                 <td>性别:</td>
+                 <td>
+                     <input type="radio" name='sex' value="1"  th:checked="${editUser.sex}"/>男
+                     <input type="radio" name='sex' value="2" th:checked="${editUser.sex}"/>女
+
+                 </td>
+             </tr>
+
+
+         </table>
+     </form>
+     
+
+</body>
+</html>

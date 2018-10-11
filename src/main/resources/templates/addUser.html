@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="/EasyUI/themes/icon.css"/>
+<link rel="stylesheet" href="/EasyUI/themes/default/easyui.css"/>
+<link rel="stylesheet" href="/EasyUI/themes/color.css"/>
+<script type="text/javascript" src="/EasyUI/jquery.min.js"></script>
+<script src="/EasyUI/jquery.easyui.min.js"></script>
+<script src="/EasyUI/locale/easyui-lang-zh_CN.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+	<form id="addUserForm">
+         <table align="center">
+             <tr>
+				<td>用户姓名</td>
+				<td><input class="easyui-validatebox" data-options="required:true" name="name"></td>
+			</tr>
+			<tr>
+				<td>性别</td>
+				<td>
+					<input type="radio" data-options="required:true" name="sex" value="1"> 男
+				     <input type="radio" data-options="required:true" name="sex" value="2"> 女
+
+				</td>
+			</tr>
+
+
+         </table>
+     </form>
+
+</body>
+</html>
