@@ -1,7 +1,15 @@
 package com.jk.model;
 
 import java.io.Serializable;
-
+/**
+ * 类描述：    
+ * 创建人：LDW
+ * 创建时间：2018/10/11 20:41  
+ * 修改人：LDW
+ * 修改时间：2018/10/11 20:41     
+ * 修改备注：       
+ * @version ：1.0    
+ */
 public class UserBean extends Page implements Serializable {
 
     private static final long serialVersionUID = 13974673595083302L;
